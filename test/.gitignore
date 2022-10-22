@@ -1,7 +1,0 @@
-# test: includes files only with .c extension
-
-*
-!*.c
-
-# test successfull but ignored gitignore file itself as it has .gitignore extension
-# to add a ignored file: git add -f test/.gitignore
