@@ -1,4 +1,4 @@
 # ignores all files except the files with .c extension
 
-*.
+*
 !*.c
