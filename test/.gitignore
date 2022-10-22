@@ -1,0 +1,6 @@
+# test: includes files only with .c extension
+
+*
+!*.c
+
+# test successfull
