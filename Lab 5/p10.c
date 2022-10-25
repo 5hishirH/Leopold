@@ -1,3 +1,5 @@
+// A c program to reverse a number.
+
 #include<stdio.h>
 
 int main()
@@ -19,4 +21,3 @@ int main()
 
     return 0;
 }
-
