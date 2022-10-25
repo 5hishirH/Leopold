@@ -1,22 +1,24 @@
-// A c program to print a prime number within a range.
+// A c program to print the prime numbers within a range.
 
 #include<stdio.h>
 
 int main()
 {
-    int sr,r,num,f,count;
+    int sr,r,f,count;
 
     printf("[Enter the range]\nFrom: ");
     scanf("%d", &sr);
+
     printf("To: ");
     scanf("%d", &r);
+
     printf("\nPrime numbers from %d to %d:\n", sr,r);
-    for(num=sr;num<=r;num++)
+    for(sr;sr<=r;sr++)
     {
         count=0;
-        for(f=1;f<=num;f++)
+        for(f=1;f<=sr;f++)
         {
-            if(num%f==0)
+            if(sr%f==0)
             {
                 count++;
             }
@@ -25,9 +27,10 @@ int main()
                 break;
             }
         }
+
         if(count==2)
         {
-            printf("%d\n", num);
+            printf("%d\n", sr);
         }
     }
 

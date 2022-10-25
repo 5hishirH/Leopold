@@ -7,6 +7,7 @@ int main()
     int num,count=0,f=1;
     printf("Enter an integer: ");
     scanf("%d", &num);
+
     while(f<=num)
     {
         if(num%f==0)
@@ -15,6 +16,7 @@ int main()
         }
         f++;
     }
+    
     if(count==2)
     {
         printf("%d is a prime number.\n", num);
