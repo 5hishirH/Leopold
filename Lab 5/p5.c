@@ -23,5 +23,6 @@ int main()
     }
     printf("GCD of %d and %d = %d\n", p,q,gcd);
     printf("LCM of %d and %d = %d\n", p,q,lcm);
+    
     return 0;
 }
