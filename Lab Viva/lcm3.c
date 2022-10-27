@@ -9,14 +9,13 @@ int main()
     printf("Enter three numbers: ");
     scanf("%d%d%d", &p, &q, &r);
     max = p*q*r;
-    for(m=1;m<=max;m++)
+    for(m=1;lcm==0;m++)
     {
-        if(m%p && m%q && m%r)
+        if(m%p == 0 && m%q == 0 && m%r == 0)
         {
             lcm = m;
-            break;
         }
     }
-    printf("LCM of %d, %d and %d = %d", p,q,r,lcm);
+    printf("LCM of %d, %d and %d = %d\n", p,q,r,lcm);
     return 0;
 }
