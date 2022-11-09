@@ -9,7 +9,7 @@ int main()
     float m, fact, term, sum = 0, x, k = 0;
     printf("Enter x : ");
     scanf("%f", &x);
-    for(i = 1; i <= 10; i++)
+    for(i = 1; i <= 50; i++)
     {
         m = 1;
         fact = 1;
