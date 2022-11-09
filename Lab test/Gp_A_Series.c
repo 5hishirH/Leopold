@@ -5,11 +5,13 @@
 
 int main()
 {
-    int i;
+    int i, n;
     float m, fact, term, sum = 0, x, k = 0;
     printf("Enter x : ");
     scanf("%f", &x);
-    for(i = 1; i <= 50; i++)
+    printf("Enter n : ");
+    scanf("%d", &n);
+    for(i = 1; i <= n; i++)
     {
         m = 1;
         fact = 1;
