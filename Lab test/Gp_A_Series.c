@@ -6,21 +6,25 @@
 int main()
 {
     int i, n;
-    float m, fact, term, sum = 0, x, k = 0;
+    float m, fact, term, sum = 0, x, k;
+    
     printf("Enter x : ");
     scanf("%f", &x);
     printf("Enter n : ");
     scanf("%d", &n);
-    for(i = 1; i <= n; i++)
+
+    for(i = 1, k = 0; i <= n; i++, k = k + 2)
     {
-        m = 1;
-        fact = 1;
-        while(m <= k)
+        // Factorial
+        for(m = 1, fact = 1; m <= k; m++)
         {
             fact = fact*m;
-            m++;
         }
-        term = (pow(x, k))/fact;
+
+        // Term
+        term = pow(x, k)/fact;
+
+        // Addition or substraction
         if(i%2 == 0)
         {
             sum = sum - term;
@@ -29,10 +33,9 @@ int main()
         {
             sum = sum + term;
         }
-        k = k + 2;
     }
 
-    printf("Sum = %f\n", sum);
+    printf("\nSum = %f\n", sum);
 
     return 0;
 }
