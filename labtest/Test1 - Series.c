@@ -8,7 +8,7 @@ int main()
     printf("Enter term : ");
     scanf("%d", &n);
     printf("Series :\n");
-    while(term != n)
+    while(term < n)
     {
         term = i*i;
         printf("%d\t", term);
