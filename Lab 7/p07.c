@@ -1,3 +1,5 @@
+// A c program to sort an array.
+
 #include<stdio.h>
 
 int main()
@@ -5,7 +7,7 @@ int main()
     int arraySize, i, j;
     printf("How many numbers do you want to sort? : ");
     scanf("%d", &arraySize);
-    float a[arraySize], b[arraySize], temp;
+    float a[arraySize], temp;
 
     for(i = 0; i < arraySize; i++)
     {
