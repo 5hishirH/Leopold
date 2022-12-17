@@ -12,7 +12,7 @@ int main()
     strcpy(temp, str);
     strrev(temp);
 
-    if( strcmp(str, temp) )
+    if( !strcmp(str, temp) )
     {
         printf("String is palindrome\n");
     }
