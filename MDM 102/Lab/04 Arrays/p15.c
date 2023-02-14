@@ -68,8 +68,8 @@ int main()
     {
         for(j = 0; j < q; j++)
         {
-            r[i][j] = 0;
-            for(k = 0; k < n; k++)  // n and p are equal
+            
+            for(r[i][j] = 0, k = 0; k < n; k++)  // n and p are equal
             {
                 r[i][j] += a[i][k] * b[k][j];
             }
